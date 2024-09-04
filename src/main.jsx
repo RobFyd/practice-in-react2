@@ -1,29 +1,14 @@
-import { createElement } from "react"; //React
-import { createRoot } from "react-dom/client"; //ReactDOM
-// import { StrictMode } from 'react';
+// import { createElement } from "react"; //React.
+import { createRoot } from "react-dom/client"; //ReactDOM.
 
-const element = createElement(
-  "a",
-  { href: "https://zrozumiecreact.pl" },
-  "test"
-);
-
-const elementInJSX = <a href="https://zrozumiecreact.pl">test 3</a>;
-console.log(<h1>test 2</h1>); // -> createElement('h1', {}, 'test 2')
-console.log(element);
-console.log(elementInJSX);
-
-const currentDate = new Date();
-
-const hours = currentDate.getHours();
-const minutes = currentDate.getMinutes();
-
-console.log(hours, minutes);
-
-const timer = (
+const stringContent = "Hello World !";
+const numberContent = 5;
+const calcContent = 5 + 5;
+const element = (
   <div>
-    {hours} : {minutes}
+    {stringContent} | {numberContent} | {calcContent} |{" "}
+    {numberContent + calcContent + 5}
   </div>
 );
 
-createRoot(document.getElementById("root")).render(timer);
+createRoot(document.getElementById("root")).render(element);
