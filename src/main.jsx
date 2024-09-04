@@ -13,4 +13,13 @@ console.log(<h1>test 2</h1>); // -> createElement('h1', {}, 'test 2')
 console.log(element);
 console.log(elementInJSX);
 
-createRoot(document.getElementById("root")).render(element);
+const currentDate = new Date();
+
+const hours = currentDate.getHours();
+const minutes = currentDate.getMinutes();
+
+console.log(hours, minutes);
+
+const timer = <div>{hours}</div>
+
+createRoot(document.getElementById("root")).render(timer);
