@@ -20,6 +20,10 @@ const minutes = currentDate.getMinutes();
 
 console.log(hours, minutes);
 
-const timer = <div>{hours}</div>
+const timer = (
+  <div>
+    {hours} : {minutes}
+  </div>
+);
 
 createRoot(document.getElementById("root")).render(timer);
