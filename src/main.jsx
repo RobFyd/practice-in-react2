@@ -1,6 +1,7 @@
 // import { createElement } from "react"; //React.
 import { createRoot } from "react-dom/client"; //ReactDOM.
 
+//1
 const stringContent = "Hello World !";
 const numberContent = 5;
 const calcContent = 5 + 5;
@@ -12,6 +13,7 @@ const element = (
   </div>
 );
 
+//2
 const address = "https://www.google.com";
 const linkElement = (
   <p>
@@ -19,4 +21,15 @@ const linkElement = (
   </p>
 );
 
-createRoot(document.getElementById("root")).render(linkElement);
+//3
+function getRandomNumber() {
+  return Math.round(Math.random() * 100);
+}
+
+const randomNumber = (
+  <div>
+    <p>Random Number: {getRandomNumber()}</p>
+  </div>
+);
+
+createRoot(document.getElementById("root")).render(randomNumber);
