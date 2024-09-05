@@ -45,5 +45,14 @@ const personElement = (
   </div>
 );
 
+//5 array
+const numbers = [1, 2, 3, 4, 5];
 
-createRoot(document.getElementById("root")).render(personElement);
+const numbersElement = (
+  <div>
+    <p>Numbers: {numbers.join(" + ")}</p>
+  </div>
+);
+
+
+createRoot(document.getElementById("root")).render(numbersElement);
