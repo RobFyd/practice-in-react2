@@ -54,15 +54,24 @@ const numbersElement = (
   </div>
 );
 
-//6 other elements
+//6 other elements - one parent component
 const paragraphElement = (
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-    temporibus, eum obcaecati, quidem inventore tenetur dolores odio voluptate
-    ad ea ab natus hic perferendis molestiae?
-  </p>
+  <div>
+    <h1>header</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+      temporibus, eum obcaecati, quidem inventore tenetur dolores odio voluptate
+      ad ea ab natus hic perferendis molestiae?
+    </p>
+  </div>
 );
 
-const pElement = <div>{paragraphElement}</div>;
+const pElement = (
+  <div>
+    {paragraphElement}
+    {paragraphElement}
+    {paragraphElement}
+  </div>
+);
 
 createRoot(document.getElementById("root")).render(pElement);
