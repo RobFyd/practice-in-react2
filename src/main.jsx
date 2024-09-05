@@ -1,7 +1,7 @@
 // import { createElement } from "react"; //React.
 import { createRoot } from "react-dom/client"; //ReactDOM.
 
-//1
+//1 content
 const stringContent = "Hello World !";
 const numberContent = 5;
 const calcContent = 5 + 5;
@@ -13,7 +13,7 @@ const element = (
   </div>
 );
 
-//2
+//2 link
 const address = "https://www.google.com";
 const linkElement = (
   <p>
@@ -21,9 +21,9 @@ const linkElement = (
   </p>
 );
 
-//3
+//3 function
 function getRandomNumber() {
-  return Math.round(Math.random() * 100);
+  return Math.round(Math.random() * 100); // return must be inside the function to see the result, function without return gives undefined.
 }
 
 const randomNumber = (
@@ -32,4 +32,18 @@ const randomNumber = (
   </div>
 );
 
-createRoot(document.getElementById("root")).render(randomNumber);
+//4 object
+const person = {
+  name: "John",
+  age: 30,
+};
+
+const personElement = (
+  <div>
+    <p>Name: {person.name}</p>
+    <p>Age: {person.age}</p>
+  </div>
+);
+
+
+createRoot(document.getElementById("root")).render(personElement);
