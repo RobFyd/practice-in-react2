@@ -54,5 +54,15 @@ const numbersElement = (
   </div>
 );
 
+//6 other elements
+const paragraphElement = (
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+    temporibus, eum obcaecati, quidem inventore tenetur dolores odio voluptate
+    ad ea ab natus hic perferendis molestiae?
+  </p>
+);
 
-createRoot(document.getElementById("root")).render(numbersElement);
+const pElement = <div>{paragraphElement}</div>;
+
+createRoot(document.getElementById("root")).render(pElement);
