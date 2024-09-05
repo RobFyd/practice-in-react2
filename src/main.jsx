@@ -54,16 +54,17 @@ const numbersElement = (
   </div>
 );
 
-//6 other elements - one parent component
+//6 other elements - one parent component - fragment - className
 const paragraphElement = (
-  <div>
+  <>
     <h1>header</h1>
+    <a href="https://www.google.com" className="link">Google</a>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
       temporibus, eum obcaecati, quidem inventore tenetur dolores odio voluptate
       ad ea ab natus hic perferendis molestiae?
     </p>
-  </div>
+  </>
 );
 
 const pElement = (
@@ -75,3 +76,6 @@ const pElement = (
 );
 
 createRoot(document.getElementById("root")).render(pElement);
+
+
+// <> </> - fragment, it is used to wrap multiple elements without adding extra nodes to the DOM.
