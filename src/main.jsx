@@ -1,21 +1,12 @@
 // import { createElement } from "react"; //React.
 import { createRoot } from "react-dom/client"; //ReactDOM.
+import { Link } from "./components/Link";
 
 const linkElement = (
   <a href="https://google.com" target="_blank" rel="noopener noreferrer">
     Awesome course page
   </a>
 );
-
-// component
-function Link() {
-  return (
-    // elements
-    <a href="https://google.com" target="_blank" rel="noopener noreferrer"> 
-      Awesome course page
-    </a>
-  );
-}
 
 const element = (
   <>
