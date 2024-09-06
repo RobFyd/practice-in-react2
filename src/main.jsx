@@ -7,11 +7,22 @@ const linkElement = (
   </a>
 );
 
+// component
+function Link() {
+  return (
+    // elements
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer"> 
+      Awesome course page
+    </a>
+  );
+}
+
 const element = (
   <>
     <h1>Our website</h1>
     <main>
-      {linkElement}
+      {/* component instance */}
+      <Link />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quasi
         amet earum ullam, ipsa qui aut aliquam adipisci dolorum veniam
