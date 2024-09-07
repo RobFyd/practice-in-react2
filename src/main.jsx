@@ -7,14 +7,14 @@ const element = (
     <h1>Our website</h1>
     <main>
       {/* component instance */}
-      <Link />
+      <Link text="Check our website now!" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quasi
         amet earum ullam, ipsa qui aut aliquam adipisci dolorum veniam
         asperiores, placeat eveniet corporis eaque exercitationem, ab voluptatum
         nisi necessitatibus?
       </p>
-      <Link />
+      <Link text="https://google.com" />
     </main>
   </>
 );
