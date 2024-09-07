@@ -12,7 +12,7 @@ const element = (
         asperiores, placeat eveniet corporis eaque exercitationem, ab voluptatum
         nisi necessitatibus?
       </p>
-      <Link text="https://google.com" newTab={false} />
+      <Link newTab={false} />
     </main>
   </>
 );
