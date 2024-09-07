@@ -1,10 +1,13 @@
 import { createRoot } from "react-dom/client"; //ReactDOM.
 import { Link } from "./components/Link";
 import { HeadingItalic } from "./components/HeadingItalic";
+import { Logger } from "./components/Logger";
 
 const element = (
   <>
-    <HeadingItalic>Our amazing website</HeadingItalic>
+    <Logger>
+      <HeadingItalic>Our amazing website</HeadingItalic>
+    </Logger>
     <main>
       <Link text="Check our website now!" newTab={true} />
       <p>
