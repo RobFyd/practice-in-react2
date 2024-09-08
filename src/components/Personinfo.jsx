@@ -1,14 +1,4 @@
 export function PersonInfo({ person }) {
-  let telSection = (
-    <div>
-      Tel: <a href={`tel:${person.tel}`}>{person.tel}</a>
-    </div>
-  );
-
-  if (person.tel === undefined) {
-    telSection = null;
-  }
-
   return (
     <address>
       <div>
@@ -19,7 +9,13 @@ export function PersonInfo({ person }) {
       <div>
         Email: <a href={`mailto:${person.mail}`}>{person.mail}</a>
       </div>
-      {telSection}
+      {person.tel && (
+        <div>
+          Tel: <a href={`tel:${person.tel}`}>{person.tel}</a>
+        </div>
+      )}
     </address>
   );
 }
+
+// === undefined ? null :  or  &&
