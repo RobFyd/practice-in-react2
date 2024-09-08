@@ -13,7 +13,20 @@ function App() {
     mail: "m.jovovich@gmail.com",
     tel: "+44 999 111 222",
   };
-  return <PersonInfo person={john} />;
+  const curt = {
+    name: "Curt",
+    lastName: "Russell",
+    mail: "c.russell@gmail.com",
+  };
+  return (
+    <>
+      <PersonInfo person={john} />
+      <hr />
+      <PersonInfo person={milla} />
+      <hr />
+      <PersonInfo person={curt} />
+    </>
+  );
 }
 
 export default App;
