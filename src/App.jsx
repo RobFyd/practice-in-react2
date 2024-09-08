@@ -1,4 +1,5 @@
 import { PersonInfo } from "./components/Personinfo";
+// import phmImg from "./assets/phm.png";
 
 function App() {
   const john = {
@@ -25,6 +26,8 @@ function App() {
       <PersonInfo person={milla} />
       <hr />
       <PersonInfo person={curt} />
+      <img src="/phm.png" alt="" />
+      {/* <img src={phmImg} alt="" /> */}
     </>
   );
 }
