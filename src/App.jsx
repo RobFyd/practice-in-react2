@@ -19,6 +19,12 @@ function App() {
     lastName: "Russell",
     mail: "c.russell@gmail.com",
   };
+
+  function getRandomNumber() {
+    return Math.round(Math.random() * 100);
+  }
+  const randomNumber = getRandomNumber();
+
   return (
     <>
       <PersonInfo person={john} />
@@ -28,6 +34,7 @@ function App() {
       <PersonInfo person={curt} />
       <img src="/phm.png" alt="" />
       {/* <img src={phmImg} alt="" /> */}
+      <div>{randomNumber}</div>
     </>
   );
 }
