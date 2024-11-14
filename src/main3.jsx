@@ -16,7 +16,9 @@ const element = (
         asperiores, placeat eveniet corporis eaque exercitationem, ab voluptatum
         nisi necessitatibus?
       </p>
-      <Link newTab={false} />
+      <Logger>
+        <Link newTab={false} />
+      </Logger>
     </main>
   </>
 );
