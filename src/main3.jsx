@@ -10,7 +10,7 @@ const element = (
     </Logger>
     <main>
       <Link text="Check our website now!" newTab={true} />
-      <p>
+      <p style={{ color: "brown", fontSize: "18px" }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quasi
         amet earum ullam, ipsa qui aut aliquam adipisci dolorum veniam
         asperiores, placeat eveniet corporis eaque exercitationem, ab voluptatum
